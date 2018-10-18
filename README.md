@@ -5,11 +5,11 @@ Czech POS Tagger MorphoDiTa uses POS tags in PDT (Prague Dependency Treebank) fo
 ## Example Sentence Tagged in PDT Format
 ```
 Noc         NNFS1-----A----
-byla	    VpQW---XR-AA---
-touhou	    NNFS7-----A----
-přesycená	AAFS1----1A----
-a       	J^-------------
-vábila  	VpQW---XR-AA---
+byla        VpQW---XR-AA---
+touhou      NNFS7-----A----
+přesycená   AAFS1----1A----
+a           J^-------------
+vábila      VpQW---XR-AA---
 a           J^-------------
 lákala      VpQW---XR-AA---
 .           Z:-------------
