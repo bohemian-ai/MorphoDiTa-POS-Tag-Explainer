@@ -237,12 +237,9 @@ allowed_values = [
     }
 ]
 
-def validate(pos_tag):
-    if not isinstance(pos_tag, str):
-        raise Exception('POS tag must be a string')    
-
+def validate(pos_tag: str) -> list:
     pos_tag_len = len(allowed_values)
-    if len(pos_tag) is not pos_tag_len:
+    if len(pos_tag) != pos_tag_len:
         raise Exception('POS tag length incorrect. Expected {} characters, got {}.'.format(pos_tag_len, len(pos_tag)))
 
     errors = []
@@ -254,7 +251,7 @@ def validate(pos_tag):
     return errors
 
 
-def explain(pos_tag, errors):
+def explain(pos_tag: str, errors: list) -> None:
 
     if len(errors) == 0:
         print('\nPOS tag syntax valid.')
